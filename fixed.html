@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/fixed.css">
+    <title>Website</title>
+</head>
+
+<body>
+    <header>    <!--used semantic tag instead of a class for the header-->
+        <h1 id="pageTitle">Horiseon</h1>    <!--simplified the title and gave it an ID-->
+        <nav id="links">     <!--used the nav tag since this section contains navigation links-->
+            <ul>
+                <li><a href="#search-engine-optimization" class="headerLinks">Search Engine Optimization</a> </li>      <!--formatted list of links to be more readable-->
+                <li><a href="#online-reputation-management" class="headerLinks">Online Reputation Management</a></li>   <!--and assigned a common class to the links for styling-->
+                <li><a href="#social-media-marketing" class="headerLinks">Social Media Marketing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <figure id="meetingImage"></figure> <!--I attempted to use the img tag but I could not get the formatting correct when doing so-->
+    <main>      <!--used "main" semantic tag to contain the main sections of the page-->
+        <section id="searchEngineSection">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="Image of Search Engine Optimization" class="mainImages rockLeft" />
+            <h2 class="mainHeaders">Search Engine Optimization</h2>     <!--gave a class to all of the headers in the main section-->
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+        </section>
+        <Section id="onlineReputationSection">
+            <img src="./assets/images/online-reputation-management.jpg" alt="Image of Laptop" class="mainImages rockRight" />
+            <h2 class="mainHeaders">Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </Section>
+        <section id="socialMediaSection">
+            <img src="./assets/images/social-media-marketing.jpg" alt="Image of social media marketing" class="mainImages rockLeft" />
+            <h2 class="mainHeaders">Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </section>
+    </main>
+    <aside>     <!--created a semantic tag for the content on the side of the page-->
+        <section class="sidebarSections">       <!--give all the 'sections' in the sidebar the same class since they have the same properties-->
+            <h3 class="sidebarheaders">Lead Genergation</h3>        <!--give all the headers in the sidebar the same class since they have the same properties-->
+            <img src="./assets/images/lead-generation.png" alt="gear pointing down to a money symbol icon" class="benefitIcon" />   <!--give all the images in the sidebar the same class since they have the same properties-->
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </section>
+        <section class="sidebarSections">
+            <h3 class="sidebarHeaders">Brand Awareness</h3>
+            <img src="./assets/images/brand-awareness.png" alt="lightbulb head icon" class="benefitIcon" />
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </section>
+        <section class="sidebarSections">
+            <h3 class="sidebarHeaders">Cost Management</h3>
+            <img src="./assets/images/cost-management.png" alt="gears and money icon" class="benefitIcon" />
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </section>
+    </aside>
+    <footer>            <!--used a semantic tag for the footer section-->
+        <h2 id="footerText">Made with ❤️️ by Horiseon</h2>       <!--created an ID for the footer text-->
+        <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
+    </footer>
+</body>
+
+</html>
